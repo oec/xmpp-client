@@ -772,7 +772,7 @@ func (s *Session) processIQ(stanza *xmpp.ClientIQ) interface{} {
 		}
 		return xmpp.EmptyReply{}
 	default:
-		info(s.term, "Unknown IQ: "+startElem.Name.Space+" "+startElem.Name.Local)
+		info(s.term, "Unknown IQ: "+startElem.Name.Space+" "+startElem.Name.Local+" from "+stanza.From)
 	}
 
 	return nil
