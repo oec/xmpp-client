@@ -440,6 +440,7 @@ var tlsVersionStrings = map[uint16]string{
 	tls.VersionTLS10: "TLS 1.0",
 	tls.VersionTLS11: "TLS 1.1",
 	tls.VersionTLS12: "TLS 1.2",
+	tls.VersionTLS13: "TLS 1.3",
 }
 
 var tlsCipherSuiteNames = map[uint16]string{
